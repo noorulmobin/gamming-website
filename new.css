@@ -1,0 +1,342 @@
+@media screen and (max-width:500px) {
+    * {
+    margin: 0%;
+    padding: 0;
+}
+
+.background {
+ display: block;
+ background-color: #3c4656;
+    height: 100vh;
+}
+
+.imgone {
+    align-items: start;
+    height: 108px;
+    width: 109px;
+    margin-top: 17px;
+    margin-right: px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;align-items: center;
+    justify-content: center;
+}
+
+.buttonone {
+    position: absolute;
+    display: none;
+    /* height: 46px;
+    width: 155px;
+    margin-top: 25px;
+    margin-left: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #00ADB5;
+    border: 0px;
+    cursor: pointer; */
+}
+
+.textone {
+    color: white;
+    height: 50px;
+    width: 596px;
+    margin-top: 120px;
+    margin-left: 29px;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 90.77px;
+    align-content: center;
+    justify-content: center;
+}
+
+.headbutton {
+    display: flex;
+}
+
+.buttontwo {
+    border-radius: 15px;
+    background-color: #00ADB5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 0px;
+    width: 230px;
+    height: 40px;
+    margin-left: 39px;
+    margin-top: 130px;
+    cursor: pointer;
+}
+
+.buttonthree {
+    border-radius: 15px;
+    background-color: #00ADB5;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    height: 46px;
+    width: 155px;
+    margin-left: 100px;
+    margin-top: 130px;
+    cursor: pointer;
+}
+
+.seconddiv {
+    background-color: #3c4656;
+    height: 100vh;
+}
+
+.navtwo {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.texttwo {
+    color: white;
+    margin-left: 29px;
+    font-size: 70px;
+    width: 52   px;
+    height: 182px;
+}
+
+.par {
+    color: white;
+    margin: 29px;
+    font-size: 45px;
+}
+
+.buttonfour {
+    cursor: pointer;
+    border: 0px;
+    background-color: #00ADB5;
+    border-radius: 15px;
+    margin-left: 61px;
+    width: 250px;
+    height: 46px;
+    margin-top: 75px;
+}
+
+.img {
+    display: flex;
+    margin-top: 440px;
+}
+
+.imgI {
+    width: 155px;
+    height: 161px;
+}
+
+.imgII {
+    width: 155px;
+    height: 180px;
+}
+
+#imgtwo {
+    width: 430px;
+    height: 600px;
+    margin-right: 120px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.imgtwo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.thirddiv {
+    background-image: url(download1.png);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.imgthree {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.link {
+    margin: -50px;
+    margin-left: 10px;
+}
+
+.csgo {
+    background: #1f1f1f;
+    height: 100vh;
+}
+
+.mu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.tex {
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.line {
+    border: 3px solid wheat;
+    width: 700px;
+    margin-left: 600px;
+}
+
+.content-c {
+    background: #1f1f1f;
+    height: 100vh;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.he {
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.contact {
+    background-color: #3c4656;
+    height: 100vh;
+}
+
+.had {
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: aquamarine;
+    padding-top: 50px;
+}
+
+.link2 {
+    margin-top: 400px;
+    margin-left: 20px;
+}
+
+.last {
+    background: #101214;
+    height: 50vh;
+}
+
+.last1 {
+    display: flex;
+    justify-content: space-between;
+    color: azure;
+}
+
+.last-image {
+    justify-content: center;
+    width: 215px;
+    height: 226px;
+}
+
+.lh {
+    font-size: 50px;
+    font-weight: 500;
+}
+}
+/* Media Queries for Responsive Design */
+/* 
+@media only screen and (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .textone {
+        font-size: 1.5em;
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+    
+    .buttonone {
+        margin: 15px auto;
+    }
+    
+    .headbutton {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .buttontwo {
+        margin: 20px auto;
+    }
+    
+    .buttonthree {
+        margin: 20px auto;
+    }
+    
+    .img {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    #imgtwo {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .textone {
+        font-size: 1.2em;
+        width: 90%;
+        margin: 40px auto;
+    }
+    
+    .texttwo {
+        font-size: 2em;
+        width: 80%;
+        margin: 40px auto;
+        text-align: center;
+    }
+    
+    .par {
+        font-size: 1.5em;
+        margin: 20px;
+    }
+    
+    .buttonfour {
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .link2 {
+        margin-top: 200px;
+    }
+}
+
+ */
