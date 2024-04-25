@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  font-family: sans-serif;
 }
 .background {
   background-image: url(e632356ca75b49ffcb3dd81747aecedd.png);
   background-size: cover;
   background-position: left;
   background-color: #222831;
-  height: 100vh;
+  height: 70vh;
+  padding: 1%;
 }
 .nav {
   display: flex;
@@ -17,15 +19,31 @@
 }
 .imgone {
   height: 108px;
-  width: 109px;
-  margin-top: 17px;
-  margin-right: 120px;
 }
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #00adb5;
+  border: 0px;
+  cursor: pointer;
+  border: none !important;
+  padding: 1%;
+  height: 46px !important;
+  /* typography */
+  font-family: Inter;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.31px;
+  text-align: left;
+}
+
 .buttonone {
   height: 46px;
   width: 155px;
-  margin-top: 25px;
-  margin-left: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,26 +53,33 @@
   cursor: pointer;
 }
 .textone {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-weight: 700;
   font-size: 2em;
   color: white;
-  margin-top: 170px;
-  margin-left: 29px;
+  height: 30%;
 }
-
+#animatedtext {
+  animation: 5s linear infinite;
+}
 .headbutton {
   display: flex;
+  height: 15%;
+  align-items: flex-end;
+  gap: 5%;
 }
 .buttontwo {
   display: flex;
   justify-content: center;
-  margin-left: 29px;
+  /* margin-left: 29px; */
   align-items: center;
   border-radius: 15px;
   background-color: #00adb5;
-  margin-top: 130px;
+  /* margin-top: 130px; */
   cursor: pointer;
-  padding: 10px;
+  /* padding: 10px; */
 }
 .buttonthree {
   display: flex;
@@ -62,17 +87,10 @@
   align-items: center;
   border-radius: 15px;
   background-color: #00adb5;
-  margin-left: 100px;
-  margin-top: 130px;
+
   cursor: pointer;
-  padding: 10px;
 }
 @media screen and (max-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   .background {
     height: 100vh;
   }
@@ -81,7 +99,6 @@
     justify-content: center;
     width: 71px;
     height: 71px;
-    margin-left: 17px;
   }
   .buttonone {
     display: none;
@@ -91,58 +108,69 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* margin-left: 75px; */
     font-size: 25px;
+    height: 50%;
   }
   .ab {
     font-size: 40px;
     font-weight: 700;
-    align-items: center;
   }
   .headbutton {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    height: 25%;
+    gap: 15%;
   }
   .buttontwo {
-    width: 230px;
-    margin-right: 20px;
+    font-family: sans-serif;
+    padding: 0 2%;
   }
   .buttonthree {
     width: 155px;
-    margin-right: 100px;
-    margin-top: 80px;
   }
 }
 
-/* divisions  2 */
+/* divisions 2 */
 .seconddiv {
   background-color: #3c4656;
   height: 90vh;
 }
-.imgbtn {
-  /* align-items: flex-end; */
-  margin-top: 400px;
-  margin-right: 400px;
-}
 
+.imgtwo {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 .texttwo {
   color: white;
-  margin-left: 29px;
+  padding: 0 2%;
   font-size: 70px;
+  width: 50%;
 }
 .par {
   color: white;
-
-  margin: 29px;
+  padding: 0 2%;
   font-size: 45px;
+  width: 50%;
 }
 .sectwobtn {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  padding: 1%;
+}
+.images {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+
+  gap: 30px;
+  padding: 1%;
 }
 
 #imgbig {
@@ -162,31 +190,23 @@
   border: none;
   background-color: #00adb5;
   border-radius: 15px;
-  padding: 10px;
-  width: 200px;
+  width: 258px;
 }
 
 @media screen and (max-width: 768px) {
   .seconddiv {
-    height: 85.5vh;
+    height: 70.5vh;
   }
   #imgbig {
     display: none;
   }
-
   .texttwo {
     font-size: 40px;
+    height: 122px;
   }
-
-  .images {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .buttonfour {
-    width: 148px;
-    margin-left: 10px;
+  .par {
+    font-size: 35px;
+    height: 48px;
   }
   #imgI {
     width: 155px;
@@ -196,60 +216,76 @@
     width: 155px;
     height: 161px;
   }
+
   .sectwobtn {
     display: flex;
-    justify-content: space-around;
-    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2%;
   }
-  .imgbtn {
-    align-items: flex-end;
-    margin-top: 165px;
-    margin-right: 200px;
+  .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5%;
   }
 }
-
 /* divisions 3 */
 
 .thirddiv {
   background-image: url(download1.png);
   background-size: cover;
   height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 .imgthree {
   display: flex;
-  gap: 150px;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  height: 90%;
+}
+.imagesthree {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  gap: 30%;
 }
 .link {
-  margin: -60px;
-  margin-left: 20px;
-  font-size: 40px;
+  text-align: left;
+  padding: 1%;
+  font-size: 30px;
 }
 @media screen and (max-width: 768px) {
   .thirddiv {
-    height: 100vh;
+    height: 1440px;
   }
   .imgthree {
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imagesthree {
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-around;
-
-    gap: 15px;
+    justify-content: center;
+    gap: 10%;
+    height: 90%;
   }
   #imgthree {
-    height: 330px;
+    height: 574px;
   }
   #imgforth {
-    height: 330px;
+    height: 574px;
   }
   .link {
-    font-size: x-large;
-    /* margin-top: 350px; */
-    padding-top: 15px;
+    height: 5%;
+    padding: 1%;
+    font-size: 40px;
   }
 }
 
@@ -257,14 +293,14 @@
 
 .csgo {
   background: #17171f;
-  height: 100vh;
+  height: 85vh;
 }
 .mu {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 20px;
   gap: 15px;
+  padding: 2%;
 }
 .csgoo {
   display: none;
@@ -278,35 +314,29 @@
   color: antiquewhite;
   font-size: 50px;
   font-weight: 700;
-  margin-top: 100px;
 }
-.horizontal-line {
-  border-top: 1px solid #fff;
-  width: 700px;
+.line {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-left: 700px;
 }
-/* .dropline {
-    border: 3px solid wheat;
-    width: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 700px;
-  } */
+hr {
+  border: 8px solid #fff;
+  border-radius: 10px;
+  width: 900px;
+}
+.csgoto {
+  height: 50%;
+}
+
 .content-c {
   background: #17171f;
-  height: 100vh;
-  padding: 10px;
+  height: 70vh;
 }
 .cont {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
-  padding: 10px;
 }
 .git {
   display: none;
@@ -335,7 +365,6 @@
   }
   .mu img {
     height: 397px;
-    width: 206px;
   }
   .tex {
     display: none;
@@ -369,12 +398,14 @@
   }
 
   .git {
-    display: grid;
-    margin-right: 190px;
-  }
-  /* .linkkk{
     display: flex;
-} */
+    align-items: flex-start;
+    padding: 2%;
+  }
+
+  .line {
+    display: none;
+  }
 }
 
 /* division5 */
@@ -382,101 +413,88 @@
   background-color: #3c4656;
   height: 50vh;
 }
-.had {
+.contactcontent {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: antiquewhite;
   font-size: 40px;
   font-weight: 700;
-  padding-top: 50px;
+  height: 90%;
+  gap: 15%;
 }
-.para {
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-  font-weight: 700;
-  color: aquamarine;
-  padding-top: 30px;
-}
+
 .btniii {
-  /* border: 10px solid red;
-      display: flex; */
   display: none;
 }
 .link2 {
-  margin-top: 120px;
-  margin-left: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 1%;
   color: #18191c;
+}
+.contactbutton {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .contact {
-    height: 50vh;
+    height: 65vh;
   }
-  .had {
-    font-size: 25px;
-    display: grid;
+  .contactcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
   }
-  .para {
-    display: grid;
-    font-size: 20px;
-    text-align: center;
-  }
+
   .link2 {
     display: none;
   }
 
-  .mubeen {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 30px;
-  }
-  .btniii {
+  .contactbutton {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 172px;
-    padding: 8px;
-    border: 1px solid #0e0f11;
-    background-color: #00adb5;
-    border-radius: 15px;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .contact {
+    overflow: hidden;
+  }
+}
 /* divisio6 */
 
 .last {
   background-color: #1f1f29;
-  height: 40vh;
+  height: 50vh;
 }
 .last1 {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 1%;
 }
 .lastimage {
   width: 212px;
   height: 220px;
 }
 .lh {
-  padding-top: 25px;
+  font-size: 50px;
   color: #fff;
 }
 .bh {
+  font-size: 25px;
   color: #fff;
 }
 .th {
+  font-size: 25px;
   color: #fff;
 }
 .rh {
+  font-size: 50px;
   color: #fff;
 }
-.rightcontent {
-  margin-right: 20px;
-}
-.leftcontent {
-  margin-left: 20px;
-}
+
 @media screen and (max-width: 768px) {
   .last {
     height: 45vh;
@@ -489,5 +507,10 @@
   }
   .rightcontent {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .last {
+    padding: 2%;
   }
 }
